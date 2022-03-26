@@ -1,0 +1,23 @@
+{
+  "name": "inventory-invoice",
+  "version": "1.0.0",
+  "description": "Inventory & Invoice System (Desktop Application using Electorn)",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srohatgi01/inventory-invoice.git"
+  },
+  "author": "Sarthak Rohatgi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srohatgi01/inventory-invoice/issues"
+  },
+  "homepage": "https://github.com/srohatgi01/inventory-invoice#readme",
+  "dependencies": {
+    "electron": "^17.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
