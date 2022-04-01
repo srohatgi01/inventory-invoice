@@ -58,3 +58,21 @@ main a {
     margin-top: 20px;
     font-size: 22px;
 }
+
+.client-img {
+    float: left;
+}
+
+.client-img img {
+    width: 100px;
+}
+
+.client-fields {
+    position: absolute;
+    top: 40%;
+}
+
+.client-fields input {
+    display: block;
+    margin: 10px;
+}

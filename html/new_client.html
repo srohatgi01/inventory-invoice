@@ -3,14 +3,37 @@
 <head>
     <title>New Client</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="../config.js"></script>
+    <script src="../backend.js"></script>
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img class="header-logo" src="../assets/Logo.png" alt="BSD Logo">
+            <img class="header-logo" src="../assets/bds-logo.png" alt="BSD Logo">
         </a>
     </header>
+    <main class="new-client-main">
+        <!--       <div class="client-img"><img src="client.png" alt="New Client Image"></div> -->
+        <div class="client-fields">
+            <input id="c-name" type="text" placeholder="Client Name">
+            <input id="c-num" type="text" placeholder="Phone Number">
+            <input id="c-email" type="text" placeholder="Email Address">
+            <input id="c-submit" type="submit">
+        </div>
+    </main>
+
+
+    <script>
+        document.getElementById("c-submit").addEventListener("click", function() {
+            let clientName = document.getElementById('c-name').value
+            let clientNumber = document.getElementById('c-num').value
+            let clientEmailAddress = document.getElementById('c-email').value
+            console.log(`${clientName} ${clientNumber} ${clientEmailAddress}`)
+            createNewClient(clientName, clientNumber, clientEmailAddress)
+        })
+    </script>
+
 </body>
 
 </html>
